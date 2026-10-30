@@ -1,50 +1,23 @@
-<h1>Apsho Hugo</h1>
-<img src="https://user-images.githubusercontent.com/36766798/107849133-5d1ca080-6e23-11eb-931a-7e5d1b720901.png" alt="screenshot" width="100%">
+# Spontagunous | Bespoke Voice AI for Dental Practices
 
-Apsho Hugo – App Landing Page is the perfect app showcase Hugo Theme. Apsho is a better way to present your modern business and app showcasing. It’s easy to customize and also well documented. And compatible with Desktop, laptop, mobile, and also compatible with major browsers. We follow the modern design system to craft the template.
+Bespoke vocal AI receptionists and custom admin command portals tailored for modern dental and healthcare clinics.
 
-## Table of Contents
+- **Website:** [spontagunous.syamraj.in](https://spontagunous.syamraj.in/)
+- **Product Route:** [spontagunous.syamraj.in/bespoke-voice-ai](https://spontagunous.syamraj.in/bespoke-voice-ai/)
+- **Founder:** [Syamraj](https://syamraj.in/)
 
-- [Live Demo](#live-demo)
-- [Installation](#installation)
-- [Main Features](#features)
-- [Support](#support)
-- [Licensing](#licensing)
-- [Hire](#hire)
+---
 
-## Live Demo
+## Core Capabilities
+- **Low-Latency Streaming Speech:** Sub-600ms conversational turn-taking with natural cadence.
+- **100% Ring-1 Answer Rate:** Eliminates missed patient calls during lunch hours, evenings, and weekends.
+- **Clinical Triage Guardrails:** Deterministic red-flag emergency detection with instantaneous warm human hand-offs.
+- **Bespoke Clinic Admin Portal:** Real-time speech-to-text transcripts, inline 1.0x/1.5x audio scrubbers, and one-click PMS sync.
+- **Practice Management System Integration:** Compatible with Open Dental, Dentrix, Eaglesoft, and Google Calendar.
 
-Checkout the live demo [here](https://apsho-hugo.staticmania.com/)
+---
 
-## Installation
-
-1. Add the repository into your Hugo Project repository as a submodule, `git submodule add git@github.com:StaticMania/hugo-apsho.git themes/apsho`.
-2. Copy the  `data`, `content`, `static`, `resources` & `config.toml` files from the `exampleSite` directory and paste it on you Hugo Project repository/directory. From the site home directory:
-
-   cp -a themes/apsho/exampleSite/\* .
-
-3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
-
-## Features
-
-- Responsive Ready.
-- Powered by Bootstrap 4.
-- Blog Support.
-- Well formatted code.
-- Easy Customization.
-- FabForm.io [static website form](https://fabform.io).
-- Google Analytics.
-- Forestry Integrated.
-- Crafted for Personal Portfolio
-
-## Support
-
-Have some question or facing any technical trouble feel free to [Contact Us](https://staticmania.com/contact/)
-
-## Licensing
-
-This Repository is licensed under the [MIT](https://github.com/StaticMania/apsho/blob/master/LICENSE) License
-
-## Hire
-
-Need help to build HUGO websites with your custom requirements. Feel free to [contact](https://staticmania.com/contact/) with us. We provide custom development service for HUGO.
+## Deployment & Hosting
+This site is built with [Hugo](https://gohugo.io/) and automatically deployed to GitHub Pages via GitHub Actions.
+- **Custom Domain:** `spontagunous.syamraj.in`
+- **Root Redirect:** Visitors to `spontagunous.syamraj.in` are routed to `/bespoke-voice-ai/`.
