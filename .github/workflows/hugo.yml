@@ -46,7 +46,8 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          hugo --minify
+          hugo --minify --destination public/bespoke-voice-ai
+          cp root_redirect.html public/index.html
           cp static/CNAME public/CNAME
           touch public/.nojekyll
 
