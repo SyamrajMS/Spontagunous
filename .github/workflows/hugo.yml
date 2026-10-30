@@ -49,6 +49,7 @@ jobs:
           hugo --minify
           cp static/CNAME public/CNAME
           cp root_redirect.html public/index.html
+          touch public/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
