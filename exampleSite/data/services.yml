@@ -1,16 +1,27 @@
-#  icons can be found on https://themify.me/themify-icons
 ---
 enable: true
-title: You can benefit more than you think
+title: What you get with Spontagunous
 services:
-  - icon: ti-settings
-    title: No Setup
-    description: They generate alignment and engagement
+  - icon: ti-headphone
+    title: Sub-600ms Latency
+    description: Natural conversation speed with no mechanical lag or awkward pauses on every inbound call.
 
-  - icon: ti-check-box
-    title: Free Trial
-    description: They generate alignment and engagement
+  - icon: ti-dashboard
+    title: Live Admin Portal
+    description: Custom-built front-desk command centre with real-time telemetry, audio logs, and PMS sync.
 
-  - icon: ti-key
-    title: Quick Access
-    description: They generate alignment and engagement
+  - icon: ti-timer
+    title: 24/7 Coverage
+    description: Never miss a call — lunch breaks, evenings, weekends. Ring 1 is always answered.
+
+  - icon: ti-lock
+    title: HIPAA Compliant
+    description: Encrypted audio, secure transit, and compliant data isolation for clinical entities.
+
+  - icon: ti-user
+    title: Zero Staff Displacement
+    description: Handles the phone queue so your team focuses entirely on in-office patient care.
+
+  - icon: ti-money
+    title: Revenue Protection
+    description: Recover up to $1,500+ per day in appointments that would otherwise be lost to missed calls.

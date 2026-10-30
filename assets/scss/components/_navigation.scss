@@ -8,13 +8,14 @@
 
   @include desktop {
     text-align: center;
-    padding: 20px 30px;
+    padding: 10px 20px;
     width: 95%;
     margin: 20px auto;
     border-radius: 8px;
     background: $white;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
   }
+
   @include mobile {
     padding: 15px 20px;
   }
@@ -32,6 +33,7 @@
         z-index: 1;
         transition: all 0.5s ease-in-out;
         letter-spacing: 2px;
+
         @include desktop {
           font-size: 16px;
           padding: 15px 0;
@@ -42,7 +44,10 @@
 
   .navbar-brand {
     img {
-      width: 154px;
+      width: 180px;
+      margin-top: -15px;
+      margin-bottom: -15px;
+
       @include mobile {
         width: 120px;
       }
@@ -69,12 +74,15 @@
         box-shadow: 0px 8px 20px rgba(255, 115, 128, 0.3);
         transition: 0.3s $site-ease;
         text-transform: uppercase;
+
         &:hover {
           transform: scale(1.04);
         }
+
         @include desktop {
           margin-top: 20px;
         }
+
         @include mobile {
           display: block;
         }
@@ -137,12 +145,15 @@
     border: none;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
     top: 0;
+
     @include desktop {
       padding: 20px 30px;
     }
+
     @include mobile {
       padding: 15px 20px;
     }
+
     .navbar-brand {
       .logo-main {
         display: block;

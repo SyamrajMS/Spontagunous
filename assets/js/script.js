@@ -56,14 +56,17 @@ $(document).ready(function () {
   // Screenshot Slider
   $(".screenshots-slider").slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
     arrows: false,
     centerMode: true,
     centerPadding: "0px",
     autoplay: true,
-    speed: 500,
+    autoplaySpeed: 3000,
+    speed: 600,
+    pauseOnHover: true,
+    pauseOnFocus: false,
 
     responsive: [
       {
@@ -74,7 +77,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

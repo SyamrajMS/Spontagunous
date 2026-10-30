@@ -1,9 +1,12 @@
 ---
 enable: true
-title: Turn your business to next level
-caption: Networking
-description: Enjoy team diversity and increase their networks among others people in various fields by providing an exceptional facilities and coworking.
-buttonName: Available on
-button1text: Apple Store
-button2text: Google Play
-image: images/hero/hero-image.svg
+title: Engineered vocal AI receptionist for modern dental practices
+caption: Bespoke Voice AI
+description: We architect low-latency AI voice receptionists that triage calls and capture bookings 24/7, coupled with custom admin portals tailored to your clinic's workflows.
+button1Name: Contact Us
+button2Name: Linkedin
+button1text: Schedule Discovery Call
+button2text: View Business page
+image: images/hero/heroImage.png
+email: "me@syamraj.in?subject=Discovery%20Call%20Request"
+button2link: "https://www.linkedin.com/company/144034832"

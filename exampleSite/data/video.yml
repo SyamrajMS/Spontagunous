@@ -1,9 +1,7 @@
 ---
 enable: true
-comment1: Ultimate Experiences
-comment2: with Story, Emotion and Purpose
-buttonName: Available on
-button1text: Apple Store
-button2text: Google Play
-image: images/video/video.png
-video: https://www.youtube.com/watch?v=swnudbCnccs
+title: "See Spontagunous in Action"
+description: "Watch how our autonomous dental AI receptionist handles live patient calls, triages emergencies, and synchronizes bookings to the clinic portal in real time."
+video_id: "ZnbylfF8G5I"
+buttonText: "Schedule Discovery Call"
+buttonLink: "mailto:me@syamraj.in?subject=Discovery%20Call%20Request"

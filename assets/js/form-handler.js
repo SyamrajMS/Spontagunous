@@ -3,39 +3,62 @@ window.addEventListener("DOMContentLoaded", function () {
   var button = document.getElementById("contact-form-button");
   var status = document.getElementById("contact-form-status");
 
-  function success() {
-    form.reset();
-    button.style = "display: none";
-    status.innerHTML = "Thanks! Contact form is submitted successfully.";
-  }
+  if (!form) return;
 
-  function error() {
-    status.innerHTML = "Oops! There was a problem.";
-  }
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
 
-  // handle the form submission event
-  if (form != null) {
-    form.addEventListener("submit", function (ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
-  }
+    var originalButtonText = button.innerHTML;
+    button.disabled = true;
+    button.innerHTML = "Sending...";
+    status.innerHTML = "";
+    status.className = "mt-3";
+
+    var data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method || "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        if (response.ok) {
+          form.reset();
+          button.style.display = "none";
+          status.className = "mt-3 alert alert-success";
+          status.innerHTML =
+            "<strong>Thank you!</strong> Your message has been sent successfully. We will get back to you shortly.";
+        } else {
+          response
+            .json()
+            .then(function (resData) {
+              status.className = "mt-3 alert alert-danger";
+              if (resData && resData.message) {
+                status.innerHTML = "Oops! " + resData.message;
+              } else {
+                status.innerHTML =
+                  "Oops! There was a problem submitting your form. You can also email us directly at <a href='mailto:me@syamraj.in'>me@syamraj.in</a>.";
+              }
+              button.disabled = false;
+              button.innerHTML = originalButtonText;
+            })
+            .catch(function () {
+              status.className = "mt-3 alert alert-danger";
+              status.innerHTML =
+                "Oops! There was a problem submitting your form. You can also email us directly at <a href='mailto:me@syamraj.in'>me@syamraj.in</a>.";
+              button.disabled = false;
+              button.innerHTML = originalButtonText;
+            });
+        }
+      })
+      .catch(function () {
+        status.className = "mt-3 alert alert-danger";
+        status.innerHTML =
+          "Oops! There was a problem submitting your form. Please email us directly at <a href='mailto:me@syamraj.in'>me@syamraj.in</a>.";
+        button.disabled = false;
+        button.innerHTML = originalButtonText;
+      });
+  });
 });
-
-// helper function for sending an AJAX request
-
-function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
-    }
-  };
-  xhr.send(data);
-}

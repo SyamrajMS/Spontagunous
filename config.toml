@@ -1,0 +1,82 @@
+# MAIN base
+baseURL = "https://spontagunous.syamraj.in/"
+languageCode = "en-us"
+title = "Spontagunous | AI Voice Receptionist for Dental Clinics"
+
+
+
+# Navigation Bar
+[[menu.main]]
+    name = "Home"
+    url = "#hero"
+    weight = 1
+[[menu.main]]
+    name = "Services"
+    url = "#services"
+    weight = 2
+[[menu.main]]
+    name = "How It Works"
+    url = "#feature"
+    weight = 3
+[[menu.main]]
+    name = "FAQ"
+    url = "#faq"
+    weight = 4
+[[menu.main]]
+    name = "Blog"
+    url = "blog"
+    weight = 5
+[[menu.main]]
+    name = "Contact"
+    url = "contact"
+    weight = 6
+
+# Footer Sitemap
+[[menu.sitemap]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.sitemap]]
+    name = "Services"
+    url = "/#services"
+    weight = 2
+[[menu.sitemap]]
+    name = "FAQ"
+    url = "/#faq"
+    weight = 3
+[[menu.sitemap]]
+    name = "Blog"
+    url = "blog"
+    weight = 4
+[[menu.sitemap]]
+    name = "Contact"
+    url = "contact"
+    weight = 5
+
+# Footer Address
+[params.address]
+address = "spontagunous.syamraj.in"
+email = "me@syamraj.in"
+
+# Footer Social
+[params.social]
+facebook = ""
+twitter = ""
+youtube = "https://www.youtube.com/channel/UCle3RnLx652_NbEUKaFflPw"
+linkedin = "https://www.linkedin.com/company/144034832"
+
+[params]
+
+# Header
+logo = "images/logo.png"
+contactFormAction = "https://formsubmit.co/me@syamraj.in"
+googleAnalytics = ""
+
+# Footer
+footerTitle = "Eliminate missed calls. Scale your practice."
+copyright1 = "Bespoke AI voice receptionists & custom portals for dental clinics."
+copyright2 = "Copyright &copy; Spontagunous {year} &mdash; Built by <a href=\"https://syamraj.in\" target=\"_blank\">Syamraj</a>"
+logo2 = "images/logo2.png"
+
+#contact
+email = "me@syamraj.in"

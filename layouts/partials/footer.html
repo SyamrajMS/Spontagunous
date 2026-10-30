@@ -7,14 +7,14 @@
         </div>
       </div>
       <div class="col-lg-8 mx-auto">
-        <form action="#" class="footer-subscribe-form">
+        <form action="mailto:me@syamraj.in?subject=Message to Spontagunous" class="footer-subscribe-form">
           <div class="from-group">
             <div class="input-group">
-              <input type="email" class="form-control" placeholder="Enter Your E-mail">
+              <input type="email" class="form-control" placeholder="Enter your message">
               <div class="subscribe">
                 <button class="btn btn-subscribe" type="submit">
                   <span class="btn-area">
-                    Subscribe
+                   send mail
                   </span>
                   <svg class="icon-left" xmlns="http://www.w3.org/2000/svg" width="16.317" height="15.323"
                     viewBox="0 0 16.317 15.323">
@@ -47,23 +47,32 @@
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <div class="footer-description">
-          <img src="{{ .Site.Params.logo | absURL }}" alt="logo">
+          <img src="{{ .Site.Params.logo2 | relURL }}" alt="logo">
           <p>
             {{ .Site.Params.copyright1 }}
               </br>
               {{ replace .Site.Params.copyright2   "{year}" now.Year | safeHTML }}
           </p>
           <ul class="footer-description-social">
-            <li>
-              <a href="{{ .Site.Params.social.facebook }}"><i class="ti-facebook"></i></a>
-            </li>
-            <li>
-              <a href="{{ .Site.Params.social.twitter }}"><i class="ti-twitter-alt"></i></a>
-            </li>
-            <li>
-              <a href="{{ .Site.Params.social.github }}"><i class="ti-github"></i></a>
-            </li>
-          </ul>
+             {{ if .Site.Params.social.linkedin }}
+             <li>
+               <a href="{{ .Site.Params.social.linkedin }}" target="_blank"><i class="ti-linkedin"></i></a>
+             </li>
+             {{ end }}
+             {{ if .Site.Params.social.youtube }}
+             <li>
+               <a href="{{ .Site.Params.social.youtube }}" target="_blank"><i class="ti-youtube"></i></a>
+             </li>
+             {{ end }}
+             {{ if .Site.Params.social.github }}
+             <li>
+               <a href="{{ .Site.Params.social.github }}" target="_blank"><i class="ti-github"></i></a>
+             </li>
+             {{ end }}
+             <li>
+               <a href="mailto:{{ .Site.Params.email }}"><i class="ti-email"></i></a>
+             </li>
+           </ul>
         </div>
       </div>
       <div class="col-lg-4 col-md-4">
@@ -73,7 +82,7 @@
             <ul>
               {{ $sitemap := .Site.Menus.sitemap }}
                 {{ range $sitemap }}
-                  <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                  <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
               {{ end }}
             </ul>
           </div>
@@ -85,7 +94,6 @@
           {{ $address := .Site.Params.address }}
           <div class="footer-widget-list">
             <ul>
-              <li><a href="tel:{{ $address.phone }}"><i class="ti-mobile"></i>{{ $address.phone }}</a></li> 
               <li><a href="mailto:{{ $address.email }}"><i class="ti-email"></i>{{ $address.email }}</a></li>
               <li><p><i class="ti-pin"></i>{{ $address.address }}</p></li>
             </ul>
@@ -96,11 +104,11 @@
   </div>
 </footer>
 
-{{ $style := resources.Get "scss/non-critical.scss" | resources.ToCSS | minify }}
-<link href="{{ $style.Permalink }}" rel="stylesheet" />
+{{ $style := resources.Get "scss/non-critical.scss" | css.Sass | minify }}
+<link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 {{ $vendor := resources.Get "js/vendor.js" | minify }}
-<script src="{{ $vendor.Permalink }}"></script>
-<!-- {{ $formhandler := resources.Get "js/form-handler.js" | minify }}
-<script src="{{ $formhandler.Permalink }}"></script> -->
+<script src="{{ $vendor.RelPermalink }}"></script>
+{{ $formhandler := resources.Get "js/form-handler.js" | minify }}
+<script src="{{ $formhandler.RelPermalink }}"></script>
 {{ $script := resources.Get "js/script.js" | minify }}
-<script src="{{ $script.Permalink }}"></script>
+<script src="{{ $script.RelPermalink }}"></script>

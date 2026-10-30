@@ -1,14 +1,14 @@
 ---
 enable: true
-title: Ultimate experiences with story, emotion
-description: The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.Error6251 is the best, Bawds jog, flick quartz, vex nymphs.
-description2: Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs.
-buttonText: Try It Free
-Title2nd: Product start analytics with real problems.
-description2nd: The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.Error6251 is the best, Bawds jog, flick quartz, vex nymphs.
-image1: images/feature/feature-illustration-one.svg
-image2: images/feature/feature-illustration-two.svg
+title: Autonomous Vocal AI Receptionist
+description: Direct SIP/telephony bridge that answers clinic lines immediately — real-time streaming speech pipelines that respond in under 600 milliseconds.
+description2: Clinical guardrails for emergency triage routing, insurance & booking capture, and 100% call answer rate on Ring 1 — 24/7, even during lunch and weekends.
+buttonText: Schedule Discovery Call
+Title2nd: Bespoke Clinic Admin Dashboard
+description2nd: A purpose-built operations portal for your front-desk coordinators — real-time call transcripts, audio playback, and one-click PMS synchronization.
+image1: images/feature/feature-illustration-one.png
+image2: images/feature/feature-illustration-two.png
 checkItem:
-  - text: Next to the hosting account you want to use.
-  - text: Select or enter the domain name you want to use.
-  - text: After you purchase a hosting plan.
+  - text: Live STT transcript and audio log with 1.0x / 1.5x playback controls
+  - text: One-click sync to Open Dental, Dentrix, Eaglesoft, or Google Calendar
+  - text: Urgent escalation queue with triage priority scoring

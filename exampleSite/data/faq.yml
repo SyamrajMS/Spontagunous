@@ -1,19 +1,29 @@
 ---
 enable: true
 title: Frequently asked questions
-description: The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax Error6251 is the best. quiz prog. Junk MTV quiz graced by fox whelps.
+description: Everything you need to know about integrating Spontagunous into your dental practice.
 faqItem:
-  - question: How to Install Apsho?
-    answer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus a, expedita dolorum consequatur magni commodi tempore nesciunt soluta veritatis corporis iste labore eaque aliquam, sapiente debitis dignissimos aut exercitationem minima.
+  - question: How quickly can Spontagunous go live at my practice?
+    answer: Typically 6–7 days total. Days 1–2 is practice discovery and triage rule setup. Days 3–5 is voice pipeline configuration and custom admin portal build. Days 6–7 is go-live and overflow guard routing.
     dataTarget: One
     show: show
 
-  - question: Is there any age limit?
-    answer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus a, expedita dolorum consequatur magni commodi tempore nesciunt soluta veritatis corporis iste labore eaque aliquam, sapiente debitis dignissimos aut exercitationem minima.
+  - question: Will this replace my front-desk staff?
+    answer: No. Spontagunous is designed to shield your staff from continuous phone interruptions so they can focus on in-office patients. When a caller requests to speak to a human, a smooth warm transfer is initiated instantly.
     dataTarget: Two
-    show: 
-    
-  - question: How much it costs to get started?
-    answer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus a, expedita dolorum consequatur magni commodi tempore nesciunt soluta veritatis corporis iste labore eaque aliquam, sapiente debitis dignissimos aut exercitationem minima.
+    show:
+
+  - question: What practice management systems do you integrate with?
+    answer: We integrate with Open Dental, Dentrix, Eaglesoft, and Google Calendar out of the box. Custom integrations are available for other PMS platforms — contact Syamraj directly to discuss your setup.
     dataTarget: Three
-    show: 
+    show:
+
+  - question: Is patient data HIPAA compliant?
+    answer: Yes. All call recordings use encrypted audio, secure transit protocols, and compliant data isolation tailored for clinical entities. Data is never shared with third parties.
+    dataTarget: Four
+    show:
+
+  - question: What does "bespoke" actually mean for my clinic?
+    answer: Every Spontagunous deployment is custom-engineered — your triage scripts, escalation rules, PMS mappings, and admin portal are built specifically for your practice's workflows. There is no generic SaaS platform you are forced into.
+    dataTarget: Five
+    show:

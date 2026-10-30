@@ -1,8 +1,9 @@
 # MAIN base
-baseURL = "https://apsho-hugo.netlify.app/"
+baseURL = "https://spontagunous.syamraj.in/"
 languageCode = "en-us"
-title = "Apsho | App landing template"
-theme = "apsho"
+title = "Spontagunous | AI Voice Receptionist for Dental Clinics"
+themesDir = "../.."
+theme = "hugo-apsho"
 
 # Navigation Bar
 [[menu.main]]
@@ -10,59 +11,72 @@ theme = "apsho"
     url = "#hero"
     weight = 1
 [[menu.main]]
-    name = "About"
-    url = "#feature"
+    name = "Services"
+    url = "#services"
     weight = 2
 [[menu.main]]
-    name = "Services"
-    url = "#faq"
+    name = "How It Works"
+    url = "#feature"
     weight = 3
 [[menu.main]]
-    name = "Blog"
-    url = "#blog"
+    name = "FAQ"
+    url = "#faq"
     weight = 4
+[[menu.main]]
+    name = "Blog"
+    url = "blog"
+    weight = 5
+[[menu.main]]
+    name = "Contact"
+    url = "contact"
+    weight = 6
 
 # Footer Sitemap
 [[menu.sitemap]]
     name = "Home"
-    url = "#"
+    url = "/"
     weight = 1
 [[menu.sitemap]]
-    name = "Latest Article"
-    url = "/blog"
+    name = "Services"
+    url = "/#services"
     weight = 2
 [[menu.sitemap]]
-    name = "Privacy & Policy"
-    url = "/privacy"
+    name = "FAQ"
+    url = "/#faq"
     weight = 3
 [[menu.sitemap]]
-    name = "Contact"
-    url = "/contact"
+    name = "Blog"
+    url = "blog"
     weight = 4
+[[menu.sitemap]]
+    name = "Contact"
+    url = "contact"
+    weight = 5
 
 # Footer Address
 [params.address]
-address = "23 Khan Niketon, Grand Street, NYK."
-email = "apsho@example.com"
-phone = "+(448) 833 5272 332"
+address = "spontagunous.syamraj.in"
+email = "me@syamraj.in"
 
 # Footer Social
 [params.social]
-facebook = "https://www.facebook.com/pg/staticmania"
-twitter = "https://twitter.com/static_mania"
-github = "https://github.com/StaticMania"
+facebook = ""
+twitter = ""
+youtube = "https://www.youtube.com/channel/UCle3RnLx652_NbEUKaFflPw"
+linkedin = "https://www.linkedin.com/company/144034832"
 
 [params]
 
 # Header
 logo = "images/logo.png"
-fabFormURL = "https://fabform.io/f/zWMBVeW"
-googleAnalytics = "UA-175025671-2"
+contactFormAction = "https://formsubmit.co/me@syamraj.in"
+googleAnalytics = ""
 
 # Footer
-footerTitle = "Get the latest app updates"
-copyright1 = "All right reserved"
-copyright2 = "Copyright ©  <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a> {year}"
+footerTitle = "Eliminate missed calls. Scale your practice."
+copyright1 = "Bespoke AI voice receptionists & custom portals for dental clinics."
+copyright2 = "Copyright &copy; Spontagunous {year} &mdash; Built by <a href=\"https://syamraj.in\" target=\"_blank\">Syamraj</a>"
+logo2 = "images/logo2.png"
 
 #contact
-email = "help@staticmania.com"
+email = "me@syamraj.in"
