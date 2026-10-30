@@ -1,6 +1,6 @@
 # MAIN base
-baseURL = "https://spontagunous.syamraj.in/bespoke-voice-ai/"
-publishDir = "public/bespoke-voice-ai"
+baseURL = "https://spontagunous.syamraj.in/"
+publishDir = "public"
 languageCode = "en-us"
 title = "Spontagunous | AI Voice Receptionist for Dental Clinics"
 
